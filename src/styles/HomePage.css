@@ -1,0 +1,96 @@
+.home-bg { background: #f5f8ff; min-height: 100vh; }
+.main-hero {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.hero-glass-card {
+  background: rgba(255,255,255,0.20);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+  padding: 56px 5vw;
+  max-width: 650px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-glass-card h1 {
+  font-size: 2.6rem;
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+  font-weight: 900;
+  letter-spacing: -1.5px;
+  margin-bottom: 22px;
+  background: linear-gradient(100deg,#39b385,#2387ff,#edc539,#32fff6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-glass-card p {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.destination-section {
+  padding: 64px 0 48px 0;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff;
+  margin: 0;
+}
+
+.destination-section .container { z-index: 2; position: relative; }
+.destination-section h2 {
+  font-size: 2.1rem;
+  letter-spacing: 0.03em;
+  color: #ffe75a;
+  text-shadow: 0 4px 12px #13235a60;
+  margin-top: 0;
+}
+
+.destination-section p { font-size: 1.08rem; color: #d9e0f2; margin-bottom: 32px; }
+
+.cards-strip {
+  display: flex;
+  gap: 32px;
+  overflow-x: auto;
+  padding-bottom: 18px;
+}
+
+.cards-strip .destination-card {
+  min-width: 290px;
+  background: rgba(20,30,60,0.70);
+}
+
+.destinations-lastgrid {
+  background: #f5f8ff;
+  padding: 70px 0;
+}
+
+.destinations-lastgrid h2 {
+  color: #294ddb;
+}
+
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+  gap: 32px;
+  margin-top: 40px;
+}
+
+/* Utilities */
+.container { max-width: 1200px; margin: auto; padding: 0 20px; }
+
+@media (max-width: 900px) {
+  .cards-strip, .destinations-grid {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .hero-glass-card { padding: 28px 8px; }
+}

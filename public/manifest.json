@@ -1,0 +1,9 @@
+{
+  "name": "Tridev Travel Agency",
+  "short_name": "Tridev Travel",
+  "description": "Sacred North India Travel & Taxi Booking",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e3a8a"
+}

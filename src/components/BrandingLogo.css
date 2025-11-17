@@ -1,0 +1,112 @@
+.logo-container {
+  position: relative;
+  display: inline-block;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+}
+
+.logo-wrapper:hover {
+  transform: scale(1.05);
+}
+
+.logo-icon {
+  font-size: 2rem;
+  animation: floatingAnimation 3s ease-in-out infinite;
+  display: inline-block;
+}
+
+.logo-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.logo-main {
+  display: flex;
+  gap: 0.1rem;
+  font-size: 1.8rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #f97316 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 0.5px;
+}
+
+.letter {
+  display: inline-block;
+  animation: springBounce 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+  opacity: 0;
+}
+
+.letter.t { animation-delay: 0s; }
+.letter.r { animation-delay: 0.1s; }
+.letter.i { animation-delay: 0.2s; }
+.letter.d { animation-delay: 0.3s; }
+.letter.e { animation-delay: 0.4s; }
+.letter.v { animation-delay: 0.5s; }
+
+.animate-logo .letter {
+  animation: springBounce 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.logo-sub {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #1e3a8a;
+}
+
+.sub-text {
+  display: inline-block;
+  animation: slideUpSpring 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.6s forwards;
+  opacity: 0;
+}
+
+@keyframes slideUpSpring {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150%;
+  height: 150%;
+  background: radial-gradient(circle, rgba(251, 191, 36, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: glowPulse 2.5s ease-in-out infinite;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .logo-main {
+    font-size: 1rem;
+  }
+
+  .logo-icon {
+    font-size: 1rem;
+  }
+
+  .logo-wrapper {
+    gap: 0.3rem;
+  }
+
+  .logo-sub {
+    font-size: 0.5rem;
+  }
+}

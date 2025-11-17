@@ -1,0 +1,31 @@
+body {
+  background: linear-gradient(120deg,#181824 0%,#244c86 90%) !important;
+  min-height: 100vh;
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+}
+.app {
+  background: linear-gradient(120deg,#e8eaf6 50%, #f4fad7 100%);
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f8fafc;
+}
+
+main {
+  flex: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+}

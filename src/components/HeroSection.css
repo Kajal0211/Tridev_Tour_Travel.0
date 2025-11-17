@@ -1,0 +1,56 @@
+.hero-section {
+  position: relative;
+  width: 100%;
+}
+
+.hero-glass-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 48px 64px;
+  max-width: 720px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.hero-glass-card h1 {
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 3.2rem;
+  margin-bottom: 15px;
+  background: linear-gradient(100deg, #39b385, #2387ff, #edc539, #32fff6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent !important;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-glass-card .accent {
+  background: linear-gradient(90deg, #ffd700, #ffae34 85%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-glass-card p {
+  font-weight: 300;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .hero-glass-card {
+    padding: 20px 20px;
+    max-width: 95vw;
+  }
+
+  .hero-glass-card h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-glass-card p {
+    font-size: 1.1rem;
+  }
+}
