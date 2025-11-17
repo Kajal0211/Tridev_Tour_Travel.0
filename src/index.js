@@ -6,8 +6,8 @@ import "./styles/index.css";
 import "./styles/animations.css";
 import "./styles/mobile.css";
 
-const container = document.getElementById("root");
-const root = createRoot(container);
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
 
 root.render(
   <React.StrictMode>
