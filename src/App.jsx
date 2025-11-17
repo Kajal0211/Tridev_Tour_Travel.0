@@ -41,7 +41,7 @@ function App() {
   };
 
   return (
-    <Router basename="/tridev_tour_travelll">
+    <Router basename="/tridev_tour_travel.0">
       <div className="app">
         <Navbar user={user} setUser={setUser} onLogout={handleLogout} />
         <NotificationCenter notifications={notifications} />
