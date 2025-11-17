@@ -5,9 +5,6 @@ import './styles/index.css';
 import './styles/animations.css';
 import './styles/mobile.css';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const root = document.getElementById('root');
+
+ReactDOM.createRoot(root).render(<App />);
