@@ -12,7 +12,7 @@ const DestinationCard = ({ destination }) => (
       <p>{destination.description}</p>
       <div className="destination-actions">
         <span className="destination-rating"><FaStar /> {destination.rating}</span>
-        <button className="enquire-btn" onClick={() => window.open(`https://wa.me/919634435040?text=I'm interested in ${destination.name}`, "_blank")}>Enquire Now</button>
+        <button className="enquire-btn" onClick={() => window.open(`https://wa.me/+91 96343 47223?text=I'm interested in ${destination.name}`, "_blank")}>Enquire Now</button>
       </div>
     </div>
   </div>
