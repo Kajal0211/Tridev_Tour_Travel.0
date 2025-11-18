@@ -52,7 +52,7 @@ const Navbar = ({ user, setUser, onLogout }) => {
         <li className={location.pathname === "/payment" ? "active" : ""}><Link to="/payment">Booking</Link></li>
       </ul>
       <div className="nav-actions">
-        <button className="nav-btn call-btn" onClick={() => window.location.href = "tel:+91 96343 47223"}>Call</button>
+        <button className="nav-btn call-btn" onClick={() => window.location.href = "tel:919634347223"}>Call</button>
         <button className="nav-btn support-btn" onClick={() => window.location.href = "/"}>Support</button>
         <button className="nav-btn chat-btn" onClick={() => window.location.href = "https://wa.me/918800778189"}>Chat</button>
         {user && <button className="logout-btn" onClick={onLogout}>Logout</button>}
