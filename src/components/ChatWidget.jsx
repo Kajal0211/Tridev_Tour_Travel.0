@@ -6,7 +6,7 @@ const ChatWidget = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleWhatsApp = () => {
-    window.location.href = 'https://wa.me/919634435040?text=Hi, I need help with travel booking';
+    window.location.href = 'https://wa.me/+91 88007 78189?text=Hi, I need help with travel booking';
   };
 
   return (
