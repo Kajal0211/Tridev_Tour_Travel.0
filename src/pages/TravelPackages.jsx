@@ -56,7 +56,7 @@ const TravelPackages = ({ addNotification }) => {
 
   const handleEnquire = (packageName) => {
     if (addNotification) addNotification(`Inquiry sent for ${packageName}!`, 'success');
-    window.location.href = `https://wa.me/919634347223?text=I'm interested in ${packageName}`;
+    window.location.href = `https://wa.me/918800778189??text=I'm interested in ${packageName}`;
   };
 
   return (
