@@ -53,7 +53,7 @@ Dropoff: ${tripData.dropoff}
 Date: ${tripData.date}
 Time: ${tripData.time}
 Vehicle: ${tripData.vehicleType}`;
-    window.location.href = `https://wa.me/919634435040?text=${encodeURIComponent(message)}`;
+    window.location.href = `https://wa.me/+91 96343 47223?text=${encodeURIComponent(message)}`;
   };
 
   return (
