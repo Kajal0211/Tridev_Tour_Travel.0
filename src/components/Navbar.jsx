@@ -54,7 +54,7 @@ const Navbar = ({ user, setUser, onLogout }) => {
       <div className="nav-actions">
         <button className="nav-btn call-btn" onClick={() => window.location.href = "tel:+91 96343 47223"}>Call</button>
         <button className="nav-btn support-btn" onClick={() => window.location.href = "/"}>Support</button>
-        <button className="nav-btn chat-btn" onClick={() => window.location.href = "https://wa.me/+91 88007 78189"}>Chat</button>
+        <button className="nav-btn chat-btn" onClick={() => window.location.href = "https://wa.me/918800778189"}>Chat</button>
         {user && <button className="logout-btn" onClick={onLogout}>Logout</button>}
       </div>
     </nav>
@@ -63,7 +63,7 @@ const Navbar = ({ user, setUser, onLogout }) => {
 
 export default Navbar;"}>Call</button>
         <button className="nav-btn support-btn" onClick={() => window.location.href = "/"}>Support</button>
-        <button className="nav-btn chat-btn" onClick={() => window.location.href = "https://wa.me/+91 88007 78189"}>Chat</button>
+        <button className="nav-btn chat-btn" onClick={() => window.location.href = "https://wa.me/918800778189"}>Chat</button>
         {user && <button className="logout-btn" onClick={onLogout}>Logout</button>}
       </div>
     </nav>
