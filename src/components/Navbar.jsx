@@ -14,30 +14,37 @@ const Navbar = ({ user, setUser, onLogout }) => {
 
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
+      {/* Logo */}
       <div className="nav-logo fancy-title">
         <Link to="/">
           Tridev <span className="accent">Travel Agency</span>
         </Link>
       </div>
 
+      {/* Navigation Links */}
       <ul className="nav-links">
         <li className={location.pathname === "/" ? "active" : ""}>
           <Link to="/">Home</Link>
         </li>
+
         <li className={location.pathname === "/travel-packages" ? "active" : ""}>
           <Link to="/travel-packages">Packages</Link>
         </li>
+
         <li className={location.pathname === "/taxi-services" ? "active" : ""}>
           <Link to="/taxi-services">Taxi</Link>
         </li>
+
         <li className={location.pathname === "/dashboard" ? "active" : ""}>
           <Link to="/dashboard">Dashboard</Link>
         </li>
+
         <li className={location.pathname === "/payment" ? "active" : ""}>
           <Link to="/payment">Booking</Link>
         </li>
       </ul>
 
+      {/* Action Buttons */}
       <div className="nav-actions">
         <button
           className="nav-btn call-btn"
